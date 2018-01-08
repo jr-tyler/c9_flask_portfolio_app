@@ -33,7 +33,7 @@ def add_numbers_post():
   	      	total = int(request.form['text']) * int(request.form['text'])
   	      	return render_template('add_numbers.html', result=str(total))
   	      except ValueError:
-  	      	return "Easy now! Let's keep it simple! Just the one number please!"
+  	      	return "Easy now! Let's keep it simple! Just the one whole number please!  And no decimal points!!"
 
 
 @app.route('/shopping_list', methods=['GET','POST'])
